@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Shoe Wall</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -41,14 +42,12 @@
       transform: translateY(-2px);
     }
 
-    .thumb {
-      background: #ddd;
+    .thumb-img {
+      width: 100%;
       height: 140px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      color: #777;
+      object-fit: cover;
+      display: block;
+      background: #ddd;
     }
 
     .card-content {
@@ -75,7 +74,7 @@
 
     <!-- AJ1 High -->
     <a class="card" href="shoes/travis-scott-x-fragment-aj1-high.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/travis-scott-x-fragment-aj1-high.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 High</div>
         <div class="shoe-name">Travis Scott x Fragment</div>
@@ -83,7 +82,7 @@
     </a>
 
     <a class="card" href="shoes/aj1-high-celadon.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/aj1-high-celadon.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 High</div>
         <div class="shoe-name">Celadon</div>
@@ -91,7 +90,7 @@
     </a>
 
     <a class="card" href="shoes/aj1-high-self-expression.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/aj1-high-self-expression.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 High</div>
         <div class="shoe-name">Self Expression</div>
@@ -99,7 +98,7 @@
     </a>
 
     <a class="card" href="shoes/aj1-high-metallic-burgundy.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/aj1-high-metallic-burgundy.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 High</div>
         <div class="shoe-name">Metallic Burgundy</div>
@@ -107,7 +106,7 @@
     </a>
 
     <a class="card" href="shoes/aj1-high-black-toe-reimagined.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/aj1-high-black-toe-reimagined.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 High</div>
         <div class="shoe-name">Black Toe Reimagined</div>
@@ -116,7 +115,7 @@
 
     <!-- AJ1 Low -->
     <a class="card" href="shoes/travis-scott-aj1-low-reverse-mocha.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/travis-scott-aj1-low-reverse-mocha.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 Low</div>
         <div class="shoe-name">Travis Scott Reverse Mocha</div>
@@ -124,7 +123,7 @@
     </a>
 
     <a class="card" href="shoes/travis-scott-aj1-low-mocha.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/travis-scott-aj1-low-mocha.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 Low</div>
         <div class="shoe-name">Travis Scott Mocha</div>
@@ -132,7 +131,7 @@
     </a>
 
     <a class="card" href="shoes/aj1-low-nu-retro-palomino.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/aj1-low-nu-retro-palomino.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 Low</div>
         <div class="shoe-name">Nu Retro Palomino</div>
@@ -140,7 +139,7 @@
     </a>
 
     <a class="card" href="shoes/aj1-low-obsidian.html">
-      <div class="thumb">AJ1</div>
+      <img class="thumb-img" src="images/aj1-low-obsidian.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ1 Low</div>
         <div class="shoe-name">Obsidian</div>
@@ -149,7 +148,7 @@
 
     <!-- AJ2 -->
     <a class="card" href="shoes/aj2-high-black-cement.html">
-      <div class="thumb">AJ2</div>
+      <img class="thumb-img" src="images/aj2-high-black-cement.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ2 High</div>
         <div class="shoe-name">Black Cement</div>
@@ -157,7 +156,7 @@
     </a>
 
     <a class="card" href="shoes/aj2-high-lucky-green.html">
-      <div class="thumb">AJ2</div>
+      <img class="thumb-img" src="images/aj2-high-lucky-green.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ2 High</div>
         <div class="shoe-name">Lucky Green</div>
@@ -165,7 +164,7 @@
     </a>
 
     <a class="card" href="shoes/aj2-high-union-grey-fog.html">
-      <div class="thumb">AJ2</div>
+      <img class="thumb-img" src="images/aj2-high-union-grey-fog.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ2 High</div>
         <div class="shoe-name">Union Grey Fog</div>
@@ -174,7 +173,7 @@
 
     <!-- AJ3 / AJ4 / AJ5 / AJ8 / AJ39 -->
     <a class="card" href="shoes/aj3-cement-grey.html">
-      <div class="thumb">AJ3</div>
+      <img class="thumb-img" src="images/aj3-cement-grey.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ3</div>
         <div class="shoe-name">Cement Grey</div>
@@ -182,7 +181,7 @@
     </a>
 
     <a class="card" href="shoes/aj4-black-cat.html">
-      <div class="thumb">AJ4</div>
+      <img class="thumb-img" src="images/aj4-black-cat.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ4</div>
         <div class="shoe-name">Black Cat</div>
@@ -190,7 +189,7 @@
     </a>
 
     <a class="card" href="shoes/aj4-cave-stone.html">
-      <div class="thumb">AJ4</div>
+      <img class="thumb-img" src="images/aj4-cave-stone.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ4</div>
         <div class="shoe-name">Cave Stone</div>
@@ -198,7 +197,7 @@
     </a>
 
     <a class="card" href="shoes/aj4-union-desert-moss.html">
-      <div class="thumb">AJ4</div>
+      <img class="thumb-img" src="images/aj4-union-desert-moss.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ4</div>
         <div class="shoe-name">Union Desert Moss</div>
@@ -206,7 +205,7 @@
     </a>
 
     <a class="card" href="shoes/aj5-grape.html">
-      <div class="thumb">AJ5</div>
+      <img class="thumb-img" src="images/aj5-grape.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ5</div>
         <div class="shoe-name">Grape</div>
@@ -214,7 +213,7 @@
     </a>
 
     <a class="card" href="shoes/aj5-black-metallic.html">
-      <div class="thumb">AJ5</div>
+      <img class="thumb-img" src="images/aj5-black-metallic.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ5</div>
         <div class="shoe-name">Black Metallic</div>
@@ -222,7 +221,7 @@
     </a>
 
     <a class="card" href="shoes/aj8-bugs-bunny.html">
-      <div class="thumb">AJ8</div>
+      <img class="thumb-img" src="images/aj8-bugs-bunny.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ8</div>
         <div class="shoe-name">Bugs Bunny</div>
@@ -230,7 +229,7 @@
     </a>
 
     <a class="card" href="shoes/aj39-sail.html">
-      <div class="thumb">AJ39</div>
+      <img class="thumb-img" src="images/aj39-sail.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AJ39</div>
         <div class="shoe-name">Sail</div>
@@ -239,7 +238,7 @@
 
     <!-- Other -->
     <a class="card" href="shoes/nike-sb-air-max-ishod-blue-glaze.html">
-      <div class="thumb">Nike</div>
+      <img class="thumb-img" src="images/nike-sb-air-max-ishod-blue-glaze.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">Nike SB</div>
         <div class="shoe-name">Air Max Ishod Blue Glaze</div>
@@ -247,7 +246,7 @@
     </a>
 
     <a class="card" href="shoes/ae1-low-nicks-gift.html">
-      <div class="thumb">AE1</div>
+      <img class="thumb-img" src="images/ae1-low-nicks-gift.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AE1 Low</div>
         <div class="shoe-name">Nick’s Gift</div>
@@ -255,7 +254,7 @@
     </a>
 
     <a class="card" href="shoes/ae1-low-lucid-lime.html">
-      <div class="thumb">AE1</div>
+      <img class="thumb-img" src="images/ae1-low-lucid-lime.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">AE1 Low</div>
         <div class="shoe-name">Lucid Lime</div>
@@ -263,7 +262,7 @@
     </a>
 
     <a class="card" href="shoes/converse-bb-shift-cx-o-canada.html">
-      <div class="thumb">Converse</div>
+      <img class="thumb-img" src="images/converse-bb-shift-cx-o-canada.jpg" alt="">
       <div class="card-content">
         <div class="shoe-id">Converse</div>
         <div class="shoe-name">BB Shift CX “O Canada”</div>
