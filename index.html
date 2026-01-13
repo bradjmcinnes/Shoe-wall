@@ -1,12 +1,35 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shoe Wall</title>
-  </head>
-  <body style="font-family: system-ui; padding: 24px;">
-    <h1>Shoe Wall is live ✅</h1>
-    <p>If you can read this, GitHub Pages is working.</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shoe Wall</title>
+  <style>
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; margin: 0; padding: 18px; }
+    h1 { margin: 0 0 10px; font-size: 28px; }
+    .sub { opacity: .75; margin-bottom: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+    a { text-decoration: none; color: inherit; }
+    .tile { border-radius: 14px; overflow: hidden; background: #f3f3f3; }
+    .tile img { width: 100%; height: 160px; object-fit: cover; display: block; background: #ddd; }
+    .meta { padding: 10px 10px 12px; }
+    .id { font-weight: 700; }
+    .name { opacity: .8; margin-top: 4px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Shoe Wall</h1>
+  <div class="sub">Tap a tag, or browse here.</div>
+
+  <div class="grid">
+    <!-- Add one tile per shoe -->
+    <a class="tile" href="shoes/S001.html">
+      <img src="images/S001.jpg" alt="S001">
+      <div class="meta">
+        <div class="id">S001</div>
+        <div class="name">Jordan Jumpman Swift “OG”</div>
+      </div>
+    </a>
+  </div>
+</body>
 </html>
