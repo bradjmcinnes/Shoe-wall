@@ -1,85 +1,272 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Shoe Wall</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       margin: 0;
-      padding: 18px;
-      background: #fafafa;
+      padding: 24px;
+      background: #ffffff;
+      color: #111;
     }
 
     h1 {
-      margin: 0 0 6px;
-      font-size: 28px;
+      margin-bottom: 4px;
     }
 
-    .sub {
-      opacity: 0.75;
-      margin-bottom: 18px;
+    .subtitle {
+      color: #666;
+      margin-bottom: 24px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 14px;
+      gap: 16px;
     }
 
-    a {
+    .card {
       text-decoration: none;
       color: inherit;
-    }
-
-    .tile {
+      border-radius: 14px;
       background: #f2f2f2;
-      border-radius: 16px;
       overflow: hidden;
+      transition: transform 0.15s ease;
     }
 
-    .tile img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
+    .card:hover {
+      transform: translateY(-2px);
+    }
+
+    .thumb {
       background: #ddd;
-      display: block;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: #777;
     }
 
-    .meta {
-      padding: 10px 12px 12px;
+    .card-content {
+      padding: 12px;
     }
 
-    .id {
-      font-weight: 700;
+    .shoe-id {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .shoe-name {
       font-size: 14px;
-    }
-
-    .name {
-      font-size: 13px;
-      opacity: 0.8;
-      margin-top: 4px;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
   <h1>Shoe Wall</h1>
-  <div class="sub">Tap a tag, or browse here.</div>
+  <div class="subtitle">Tap a tag, or browse here.</div>
 
   <div class="grid">
 
-    <!-- Travis Scott x Fragment AJ1 High -->
-    <a class="tile" href="shoes/travis-scott-x-fragment-aj1-high.html">
-      <img
-        src="images/travis-scott-x-fragment-aj1-high.jpg"
-        alt="Travis Scott x Fragment Air Jordan 1 High"
-      >
-      <div class="meta">
-        <div class="id">AJ1 High</div>
-        <div class="name">Travis Scott × Fragment</div>
+    <!-- AJ1 High -->
+    <a class="card" href="shoes/travis-scott-x-fragment-aj1-high.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 High</div>
+        <div class="shoe-name">Travis Scott x Fragment</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj1-high-celadon.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 High</div>
+        <div class="shoe-name">Celadon</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj1-high-self-expression.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 High</div>
+        <div class="shoe-name">Self Expression</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj1-high-metallic-burgundy.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 High</div>
+        <div class="shoe-name">Metallic Burgundy</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj1-high-black-toe-reimagined.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 High</div>
+        <div class="shoe-name">Black Toe Reimagined</div>
+      </div>
+    </a>
+
+    <!-- AJ1 Low -->
+    <a class="card" href="shoes/travis-scott-aj1-low-reverse-mocha.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 Low</div>
+        <div class="shoe-name">Travis Scott Reverse Mocha</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/travis-scott-aj1-low-mocha.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 Low</div>
+        <div class="shoe-name">Travis Scott Mocha</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj1-low-nu-retro-palomino.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 Low</div>
+        <div class="shoe-name">Nu Retro Palomino</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj1-low-obsidian.html">
+      <div class="thumb">AJ1</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ1 Low</div>
+        <div class="shoe-name">Obsidian</div>
+      </div>
+    </a>
+
+    <!-- AJ2 -->
+    <a class="card" href="shoes/aj2-high-black-cement.html">
+      <div class="thumb">AJ2</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ2 High</div>
+        <div class="shoe-name">Black Cement</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj2-high-lucky-green.html">
+      <div class="thumb">AJ2</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ2 High</div>
+        <div class="shoe-name">Lucky Green</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj2-high-union-grey-fog.html">
+      <div class="thumb">AJ2</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ2 High</div>
+        <div class="shoe-name">Union Grey Fog</div>
+      </div>
+    </a>
+
+    <!-- AJ3 / AJ4 / AJ5 / AJ8 / AJ39 -->
+    <a class="card" href="shoes/aj3-cement-grey.html">
+      <div class="thumb">AJ3</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ3</div>
+        <div class="shoe-name">Cement Grey</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj4-black-cat.html">
+      <div class="thumb">AJ4</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ4</div>
+        <div class="shoe-name">Black Cat</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj4-cave-stone.html">
+      <div class="thumb">AJ4</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ4</div>
+        <div class="shoe-name">Cave Stone</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj4-union-desert-moss.html">
+      <div class="thumb">AJ4</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ4</div>
+        <div class="shoe-name">Union Desert Moss</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj5-grape.html">
+      <div class="thumb">AJ5</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ5</div>
+        <div class="shoe-name">Grape</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj5-black-metallic.html">
+      <div class="thumb">AJ5</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ5</div>
+        <div class="shoe-name">Black Metallic</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj8-bugs-bunny.html">
+      <div class="thumb">AJ8</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ8</div>
+        <div class="shoe-name">Bugs Bunny</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/aj39-sail.html">
+      <div class="thumb">AJ39</div>
+      <div class="card-content">
+        <div class="shoe-id">AJ39</div>
+        <div class="shoe-name">Sail</div>
+      </div>
+    </a>
+
+    <!-- Other -->
+    <a class="card" href="shoes/nike-sb-air-max-ishod-blue-glaze.html">
+      <div class="thumb">Nike</div>
+      <div class="card-content">
+        <div class="shoe-id">Nike SB</div>
+        <div class="shoe-name">Air Max Ishod Blue Glaze</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/ae1-low-nicks-gift.html">
+      <div class="thumb">AE1</div>
+      <div class="card-content">
+        <div class="shoe-id">AE1 Low</div>
+        <div class="shoe-name">Nick’s Gift</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/ae1-low-lucid-lime.html">
+      <div class="thumb">AE1</div>
+      <div class="card-content">
+        <div class="shoe-id">AE1 Low</div>
+        <div class="shoe-name">Lucid Lime</div>
+      </div>
+    </a>
+
+    <a class="card" href="shoes/converse-bb-shift-cx-o-canada.html">
+      <div class="thumb">Converse</div>
+      <div class="card-content">
+        <div class="shoe-id">Converse</div>
+        <div class="shoe-name">BB Shift CX “O Canada”</div>
       </div>
     </a>
 
